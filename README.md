@@ -20,6 +20,13 @@ In order to view results with a UI, I leveraged the JFK files demo and replaced 
 
 Results initially display all of the Arabic documents created in the blob account and the extracted text. 
  
- ![Architecture](images/1.png)
+ ![start](images/1.png)
 
-Extracted text is originally displayed left to right, I adjusted this by reversing the json array coming from the azure search result in order to read right to left. 
+Extracted text is originally retrieved left to right, I adjusted this by reversing the json array coming from the azure search result in order to read right to left. 
+
+ ![extracted](images/2.png)
+
+After searching for a specific Arabic text, results will be filtered to view the documents and highlight the matching text with a yellow box. 
+
+ ![results](images/3.png)
+
