@@ -11,8 +11,8 @@ In order to view results with a UI, I leveraged the JFK files demo and replaced 
             https://github.com/Microsoft/AISchoolTutorials/blob/master/jfkfiles/README.md
 2. Ran the mentioned steps for configuring the environment.
 3. Replaced the created storage container with my sample images which have Arabic text.
-4. Replaced the container name in the app.config page to be the new container.
-5. Replaced the content of the files : “index.json”, “skillset.json”, “indexer.json”.
+4. Replaced the container name in the app.config page to point to my container.
+5. Replaced the content of the files : “index.json”, “skillset.json”, “indexer.json”. The details of these files will be discussed below.
 6. Edited “HocrDocument.cs” in JfkWebAPISkills project to reverse the order of the result array to read right to left.
 7. The json files skillset contain the parameters adjusted to recognize Arabic content and removed the skills which only support English.
 8. Removed the relevant code in “program.cs” which provisioned the unsupported skills.
@@ -29,4 +29,6 @@ Extracted text is originally retrieved left to right, I adjusted this by reversi
 After searching for a specific Arabic text, results will be filtered to view the documents and highlight the matching text with a yellow box. 
 
  ![results](images/3.png)
+
+ 
 
